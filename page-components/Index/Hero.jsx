@@ -9,10 +9,10 @@ const Hero = () => {
       <div>
         <h1 className={styles.title}>
           <div className={styles.nextjs}>talkie.</div>
-          <br/>
+          <br />
           <div className={styles.mongodb}>talkie.</div>
-            
-          <br/>
+
+          <br />
         </h1>
         <Container justifyContent="center" className={styles.buttons}>
           <Container>

@@ -7,8 +7,16 @@ const nodemailerConfig = process.env.NODEMAILER_CONFIG
   ? JSON.parse(process.env.NODEMAILER_CONFIG)
   : {};
 
-const transporter = nodemailer.createTransport(nodemailerConfig);
-
+const smtpConfig = {
+  host: 'us2.smtp.mailhostbox.com',
+  port: 587,
+  secure: true, // use SSL
+  auth: {
+    user: nodemailerConfig.user,
+    pass: nodemailerConfig.pass,
+  },
+};
+const transporter = nodemailer.createTransport(smtpConfig);
 export async function sendMail({ from, to, subject, html }) {
   try {
     await transporter.sendMail({
