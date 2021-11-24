@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
           name="description"
           content="nextjs-mongodb-app is a continously developed app built with Next.JS and MongoDB. This project goes further and attempts to integrate top features as seen in real-life apps."
         />
-        <meta property="og:title" content="Next.js + MongoDB App" />
+        <meta property="og:title" content="Talkie + Talkie App" />
         <meta
           property="og:description"
           content="nextjs-mongodb-app is a continously developed app built with Next.JS and MongoDB. This project goes further and attempts to integrate top features as seen in real-life apps."
