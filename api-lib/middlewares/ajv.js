@@ -11,7 +11,7 @@ export function validateBody(schema) {
       const error = validate.errors[0];
       return res.status(400).json({
         error: {
-          message: `"${error}" ${error.message}`,
+          message: `"${error.instancePath.substring(1)}" ${error.message}`,
         },
       });
     }
