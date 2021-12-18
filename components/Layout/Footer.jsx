@@ -8,9 +8,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Wrapper>
-        <Text color="accents-7">
-        Switch to light or dark mode
-        </Text>
+        <Text color="accents-7">Switch to light or dark mode</Text>
         <Spacer size={1} axis="vertical" />
         <ThemeSwitcher />
       </Wrapper>
