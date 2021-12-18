@@ -12,4 +12,20 @@ export const ValidateProps = {
   comment: {
     content: { type: 'string', minLength: 1, maxLength: 280 },
   },
+  conversation: {
+    content: {
+      type: 'object',
+      maxProperties: 3,
+      required: ['conversationId', 'sender', 'text'],
+    },
+  },
+  message: {
+    type: 'object',
+    properties: {
+      conversationId: { type: 'string' },
+      sender: { type: 'string' },
+      text: { type: 'string' },
+    },
+    required: ['conversationId', 'sender', 'text'],
+  },
 };
